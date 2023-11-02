@@ -35,7 +35,6 @@ public class BibliotecarioTeste {
 
     // TESTE 2 - REALIZAR EMPRESTIMOS 
     @Test
-
     public void testRealizarEmprestimo() { 
         Livro livroMock = Mockito.mock(Livro.class);
 
@@ -91,7 +90,6 @@ public class BibliotecarioTeste {
 
     // TESTE 5 - REGISTRAR PERDA FUNCIONANDO
     @Test
-
     public void testRegistrarPerda() {
         Livro livroMock = Mockito.mock(Livro.class);
         when(livroMock.getTitulo()).thenReturn("Harry Potter");
