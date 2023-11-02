@@ -14,7 +14,7 @@ import org.mockito.Mockito;
 public class BibliotecarioTeste {
 
     // TESTE 1 - CADASTRAR LIVROS
-
+    
     @Test
     public void testCadastrarLivro() {
         Livro livroMock = Mockito.mock(Livro.class);
@@ -28,12 +28,13 @@ public class BibliotecarioTeste {
         // Temos que saber o nome, então tem que chamar uma vez
         verify(livroMock, times(1)).getTitulo();
 
-        // Se for cadastrado corretamente o tamanho será de 1 nas atvidiades
+        // Se for cadastrado corretamente o tamanho será de 1 nas atividades.
         assertEquals(1, bibliotecario.getAtividades().size());
         assertEquals("Cadastro do livro Dom Casmurro", bibliotecario.getAtividades().get(0));
     }
 
     // TESTE 2 - REALIZAR EMPRESTIMOS 
+
     @Test
     public void testRealizarEmprestimo() { 
         Livro livroMock = Mockito.mock(Livro.class);
@@ -89,6 +90,7 @@ public class BibliotecarioTeste {
     }
 
     // TESTE 5 - REGISTRAR PERDA FUNCIONANDO
+
     @Test
     public void testRegistrarPerda() {
         Livro livroMock = Mockito.mock(Livro.class);
